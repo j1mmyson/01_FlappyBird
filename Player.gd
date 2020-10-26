@@ -45,8 +45,7 @@ func _on_Detect_area_entered(area):
 
 func _on_Detect_body_entered(body):
 	if body.name == "Walls":
-		get_tree().reload_current_scene()
-	
-	
+		# var _error = get_tree().reload_current_scene()
+		var _error = get_tree().change_scene("res://MainMenu.tscn")
 	
 	
